@@ -1,0 +1,105 @@
+body {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contract, .existing-contracts {
+  margin: 20px;
+  padding: 40px;
+  border: 2px solid #ccc; /* Thicker border for a professional look */
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.contract:hover, .existing-contracts:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+h1 {
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  color: #333;
+  font-size: 24px; /* Larger font size for headings */
+}
+
+label {
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 14px; /* Smaller font size for labels */
+}
+
+input[type="text"] {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #50f514;
+}
+
+.button {
+  background-color: #1836f6;
+  color: white;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #53ec0c;
+  transform: scale(1.05);
+}
+
+.existing-contract ul {
+  padding: 0;
+  margin: 20px 0;
+  background-color: #eee;
+  border-radius: 6px;
+}
+
+.existing-contract ul > li {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.existing-contract ul > li:last-child {
+  border-bottom: none;
+}
+
+.existing-contract ul > li > div {
+  margin-right: 12px;
+}
+
+.existing-contract ul > li > :first-child {
+  font-weight: bold;
+}
+
+.existing-contract .complete {
+  color: #5aa75a;
+  text-align: center;
+  font-weight: bold;
+}
